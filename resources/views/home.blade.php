@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Allan — Portfolio</title>
   <link rel="stylesheet" href="{{ secure_asset('assets/css/style.css') }}" />
-  <script src="{{ secure_asset('assets/js/main.js') }}"></script>
 </head>
 <body>
   <div class="topbar">
@@ -145,5 +144,6 @@
       <p>&copy; {{ date('Y') }} Allan B Prince — <a href="https://github.com/TheAllanB" style="color:inherit;opacity:.8">GitHub</a></p>
     </div>
   </footer>
+  <script src="{{ secure_asset('assets/js/main.js') }}"></script>
 </body>
 </html>
