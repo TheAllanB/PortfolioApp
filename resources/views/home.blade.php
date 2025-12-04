@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Allan's — Portfolio</title>
+  <title>Allan — Portfolio</title>
   <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}" />
 </head>
 <body>
@@ -19,10 +19,12 @@
   <main class="site container">
     <header class="hero-card fade-up">
       <div class="hero-left">
-        <div class="kicker">Final-year CS • Web & Backend</div>
+        <div class="kicker">Final-year CS • AI, Backend & Mobile</div>
         <h1 class="hero-name">Allan B Prince</h1>
         <p class="hero-intro">
-          I build full-stack web apps, simple ML tools and elegant UIs. I love clean code and practical projects.
+          I’m a final-year Computer Science student who enjoys building practical AI systems,
+          backend services, and mobile apps. I’ve worked on encrypted communication tools,
+          AI-powered resume screening, agentic teaching assistants, and image-understanding chatbots.
         </p>
         <div class="cta-row">
           <a class="btn" href="#projects">See projects</a>
@@ -31,8 +33,13 @@
       </div>
 
       <div class="hero-right">
-        <div class="avatar">YN</div>
-        <div class="small-muted">Available for internships & freelance</div>
+        {{-- replace avatar with your photo --}}
+        <img
+          src="{{ asset('assets/images/photo.jpeg') }}"
+          alt="Allan B Prince"
+          class="hero-photo"
+        >
+        <div class="small-muted">Open to AI, backend & mobile roles</div>
       </div>
 
       <div class="deco" aria-hidden="true"></div>
@@ -44,7 +51,15 @@
         <div class="line"></div>
       </div>
       <p style="color:var(--muted);margin-top:12px">
-        Short intro about yourself — skills, technologies, what you’re looking for.
+        I’m a Computer Science undergraduate who likes turning ideas into working prototypes.
+        My recent work includes building an encrypted TCP chat application, an AI-powered image
+        recognition chatbot, an AI-driven resume screening and ranking system, and an agentic
+        teaching assistant that uses multi-step reasoning and RAG.
+      </p>
+      <p style="color:var(--muted);margin-top:8px">
+        I’ve interned in AI and software roles, where I worked on LLM/RAG pipelines, local model
+        fine-tuning, and mobile app development. I enjoy clean, readable code, and I’m comfortable
+        across the stack – from Python and NLP to PHP/Laravel and Flutter.
       </p>
     </section>
 
@@ -88,7 +103,7 @@
             <h3>{{ $p['title'] }}</h3>
             <p>{{ $p['desc'] }}</p>
             <div class="meta">
-              <span class="tag">Web</span>
+              <span class="tag">Project</span>
               <a class="btn small" href="{{ $p['link'] }}">View</a>
             </div>
           </article>
@@ -111,12 +126,22 @@
           <button type="submit">Send</button>
         </form>
       </div>
+
+      <div class="contact-extra">
+        <p>You can also reach me here:</p>
+        <ul>
+          <li><strong>Phone:</strong> +91 78993 05572</li>
+          <li><strong>Email:</strong> prince4allan@gmail.com</li>
+          <li><strong>GitHub:</strong> <a href="https://github.com/TheAllanB" target="_blank" rel="noreferrer">github.com/TheAllanB</a></li>
+          <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/theallanb" target="_blank" rel="noreferrer">linkedin.com/in/theallanb</a></li>
+        </ul>
+      </div>
     </section>
   </main>
 
   <footer class="footer">
     <div class="container">
-      <p>&copy; {{ date('Y') }} Your Name — <a href="https://github.com/yourusername" style="color:inherit;opacity:.8">GitHub</a></p>
+      <p>&copy; {{ date('Y') }} Allan B Prince — <a href="https://github.com/TheAllanB" style="color:inherit;opacity:.8">GitHub</a></p>
     </div>
   </footer>
 
