@@ -4,7 +4,8 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Allan — Portfolio</title>
-  <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}" />
+  <link rel="stylesheet" href="{{ secure_asset('assets/css/style.css') }}" />
+  <script src="{{ secure_asset('assets/js/main.js') }}"></script>
 </head>
 <body>
   <div class="topbar">
@@ -35,10 +36,10 @@
       <div class="hero-right">
         {{-- replace avatar with your photo --}}
         <img
-          src="{{ asset('assets/images/photo.jpeg') }}"
+          src="{{ secure_asset('assets/images/photo.jpeg') }}"
           alt="Allan B Prince"
           class="hero-photo"
-        >
+        />
         <div class="small-muted">Open to AI, backend & mobile roles</div>
       </div>
 
@@ -144,7 +145,5 @@
       <p>&copy; {{ date('Y') }} Allan B Prince — <a href="https://github.com/TheAllanB" style="color:inherit;opacity:.8">GitHub</a></p>
     </div>
   </footer>
-
-  <script src="{{ asset('assets/js/main.js') }}"></script>
 </body>
 </html>
